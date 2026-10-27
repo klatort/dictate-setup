@@ -1,0 +1,8 @@
+[Unit]
+Description=Dictate right-ctrl hotkey daemon
+[Service]
+ExecStart=%h/bin/dictate-hotkey.py
+Restart=on-failure
+RestartSec=3
+[Install]
+WantedBy=default.target

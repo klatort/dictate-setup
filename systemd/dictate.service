@@ -1,0 +1,8 @@
+[Unit]
+Description=Dictate (low_latency_dictation, hidden pty)
+[Service]
+ExecStart=%h/bin/dictate-hidden.sh
+Restart=on-failure
+RestartSec=3
+[Install]
+WantedBy=default.target

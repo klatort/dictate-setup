@@ -1,0 +1,11 @@
+# low_latency_dictation config - tuned for fast, hallucination-resistant dictation
+# Install to: ~/.config/low_latency_dictation/config.yaml
+quality-preset: ""
+model: ggml-large-v3-turbo-q5_0.bin
+final-model: none            # instant paste: skip whole-session re-transcription
+lang: ""                     # auto-detect (English/Spanish etc.)
+hotkey-mods: ""
+hotkey-key: ""               # app hotkey disabled - external daemon handles it
+silence-detection: 4.0       # stricter VAD (with the patched binary)
+freq-thold: 100              # keep at 100: higher values muffle audio for whisper
+log-file: /tmp/dictate-actions.log
